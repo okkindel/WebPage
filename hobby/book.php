@@ -3,18 +3,15 @@ require_once(__DIR__."/../php/template.php");
 
 $DESCRIPTION = "Maciej Hajduk Homepage.";
 $STYLE =<<<EOT
-.book {
-	background: #e19818;
-}
 .nave {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: 1.5em;
 }
 @media screen and (min-width: 640px) {
-	.middle {
-		padding: 0 15%;
-	}
+	#container {
+	    width: 70%;
+    }
 }
 EOT;
 
@@ -29,7 +26,7 @@ echo $P->PageHeader();
 
 <br>
 <div class="row middle">
-	<div class="col-6-6 head shadow nave book">
+	<div class="col-6-6 head shadow nave orange">
 		2018
 	</div>
 </div>
@@ -65,7 +62,7 @@ echo $P->PageHeader();
 </div>
 <br>
 <div class="row middle">
-	<div class="col-6-6 head shadow nave book">
+	<div class="col-6-6 head shadow nave orange">
 		2017
 	</div>
 </div>
@@ -101,8 +98,6 @@ echo $P->PageHeader();
 <br>
 
 <a href="../index.php"><img src="../assets/home.png" alt="home" id="return"></a>
-<a href="https://www.instagram.com/okkindel/"><img src="../assets/prev.png" alt="prev" id="prev"></a>
-<a href="http://www.github.com/okkindel"><img src="../assets/next.png" alt="next" id="next"></a>
 
 <?php
 echo $P->End();
